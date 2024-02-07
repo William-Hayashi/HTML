@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    function pulaLinha(){
+        document.write("<br>");
+    }
+    
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(peso, altura){
+        var imc1 = peso/(altura*altura);        
+    }
+    var nome = prompt("Qual o seu nome:");
+    var alturaInformada = prompt("Informe sua altura: ");
+    var pesoInformado = prompt("Informe o seu peso");
+
+    var imc = calculaImc(pesoInformado, alturaInformada);
+    mostra(nome + " o seu IMC é " + imc);
+
+
+    if (imc > 35){
+        mostra("Você está acima do que a OMS recomenda, seu gordo:");
+    }
+    if (imc < 18.35){
+        mostra("Você está abaixo do que a OMS recomenda, seu raquitico vai malhar: ");
+    }
+    if (imc >= 18.35 && imc <=35 ){
+        
+            mostra("Você está saudável, parabéns fez o mínimo");
+    }
+
+
+
+    //var pesoWill = 80;
+    //var alturaWill = 1.71;
+
+    //calculaImc(pesoWill, alturaWill);
+    //mostra("O imc do Will é " + Math.round(imcWill));
+
+    //var pesoLucas = 72;
+    //var alturaLucas = 1.75;
+
+    //calculaImc(pesoLucas,alturaLucas);
+    //mostra("O peso de Lucas é " + Math.round(imcLucas));
+
+
+</script>
+    
+</body>
+</html>
+
+

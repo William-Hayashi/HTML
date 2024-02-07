@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Teste</title>
+</head>
+
+<body>
+    <h1>Meu primeiro teste!</h1>
+    <br>
+    Seria isso um programa? descubra visitando o Alura <a href="link.com.br">Clique aqui</a>
+</body>
+
+<script>
+    function pulaLinha(){
+        document.write("<br>")
+    }
+
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha()
+    }
+
+    var ano = 2016;
+    var pularLinha = "<br>";
+
+    //document.write("Flávio tem" + (ano - 1977) + "anos")
+    mostra("Flávio tem" + (ano - 1977) + "anos");
+    
+    //document.write("Lúcio tem" + (ano - 1946) + "anos")
+    mostra("Lúcio tem" + (ano - 1946) + "anos");
+    
+    //document.write("Mario tem" + (ano - 1997) + "anos")
+    mostra("Mario tem" + (ano - 1997) + "anos");
+    
+
+    ano = 2017;
+    //document.write("Flávio tem" + (ano - 1977) + "anos")
+    mostra("Flávio tem" + (ano - 1977) + "anos");
+    
+
+    var media = (39+20+41)/3
+    mostra("A média das idades é" + Math.round(media));
+    
+    //document.write("A média das idades é" + Math.round(media))
+</script>
+</html>

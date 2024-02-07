@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+     var númersoSecreto = Math.round(Math.random()*10);
+
+    tentativas = 1;
+     while (tentativas <= 3){
+
+        var chuteUsuario = parseInt(prompt("Qual o seu chute?"));
+
+        if (chuteUsuario == númersoSecreto){
+            mostra("Parabéns você acertouu!")
+            break;
+        }
+        else if (chuteUsuario > númersoSecreto){
+            mostra("Errouuu! O seu chute foi maior que o número secreto!")
+            tentativas++;
+        }
+        else if (chuteUsuario < númersoSecreto){
+            mostra("Errouuu! O seu chute foi menor que o número secreto!")
+            tentativas++;
+        }
+     }
+        
+    mostra("FIM DO JOGO")
+
+</script>
+    
+</body>
+</html>
